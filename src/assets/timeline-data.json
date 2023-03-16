@@ -1,0 +1,27 @@
+[
+  {
+    "questionnaire_type": "General Requirement",
+    "order": "1",
+    "img": "../../assets/images/requirement.svg"
+  },
+  {
+    "questionnaire_type": "Content Management",
+    "order": "2",
+    "img": "../../assets/images/content-managment.svg"
+  },
+  {
+    "questionnaire_type": "Marketing",
+    "order": "3",
+    "img": "../../assets/images/marketing.svg"
+  },
+  {
+    "questionnaire_type": "Technical - IT",
+    "order": "4",
+    "img": "../../assets/images/thenical-it.svg"
+  },
+  {
+    "questionnaire_type": "Technical - Development",
+    "order": "5",
+    "img": "../../assets/images/technical-development.svg"
+  }
+]

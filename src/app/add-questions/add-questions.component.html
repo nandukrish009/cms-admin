@@ -1,0 +1,158 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div formArrayName="questions">
+    <div *ngFor="let X of questions['controls']; let ix = index">
+      <div formGroupName="{{ ix }}" class="Xs">
+        <div class="question_container">
+          <div class="stepper_details">
+            <label for="formStepName">Select question type</label>
+            <select formControlName="formStepName" id="formStepName">
+              <option value="" disabled selected hidden>
+                Please Choose...
+              </option>
+
+              <option value="General Requirement">General Requirement</option>
+              <option value="Content Management">Content Management</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Technical - IT">Technical - IT</option>
+              <option value="Technical - Development">
+                Technical - Development
+              </option>
+            </select>
+          </div>
+          <input
+            type="text"
+            formControlName="question"
+            placeholder="question"
+          />
+          <input type="text" formControlName="id" placeholder="id" />
+          <div class="radio_inline">
+            <label>
+              <input
+                type="radio"
+                value="single-choice"
+                formControlName="type"
+                class="radio_input"
+              />
+              <span>Single Choice</span>
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="multiple-choice"
+                formControlName="type"
+                class="radio_input"
+              />
+              <span>Multi Choice</span>
+            </label>
+          </div>
+          <button
+            (click)="removeXs(ix)"
+            [ngStyle]="{ display: !this.ix >= 1 ? 'none' : 'block' }"
+            class="question_remove_cta"
+          ></button>
+        </div>
+
+        <div formArrayName="options">
+          <div
+            *ngFor="let Y of X['controls'].options['controls']; let iy = index"
+          >
+            <div formGroupName="{{ iy }}" class="Ys">
+              <div class="option_container">
+                <input
+                  type="text"
+                  formControlName="option"
+                  placeholder="option"
+                />
+                <input type="text" formControlName="id" placeholder="id" />
+                <button
+                  (click)="removeYs(ix, iy)"
+                  [ngStyle]="{ display: !this.iy >= 1 ? 'none' : 'block' }"
+                  class="option_remove_cta"
+                ></button>
+              </div>
+              <div formArrayName="recommendation">
+                <div
+                  *ngFor="
+                    let Z of Y['controls'].recommendation['controls'];
+                    let iz = index
+                  "
+                >
+                  <div formGroupName="{{ iz }}" class="Zs">
+                    <div class="recommendation_container">
+                      <div class="stepper_details">
+                        <label for="CMS">Select CMS type</label>
+                        <select formControlName="CMS" id="CMS">
+                          <option value="" disabled selected hidden>
+                            Please Choose...
+                          </option>
+                          <option value="AEM">AEM</option>
+                          <option value="Drupal">Drupal</option>
+                          <option value="Wordpress">Wordpress</option>
+                          <option value="Kentico">Kentico</option>
+                          <option value="Sitecore">Sitecore</option>
+                          <option value="Hubspot">Hubspot</option>
+                          <option value="Magento">Magento</option>
+                          <option value="Shopify">Shopify</option>
+                          <option value="BigCommerce">BigCommerce</option>
+                          <option value="Prestashop">Prestashop</option>
+                          <option value="Django CMS">Django CMS</option>
+                          <option value="Sharepoint">Sharepoint</option>
+                          <option value="Joomla">Joomla</option>
+                          <option value="Craft CMS">Craft CMS</option>
+                        </select>
+                      </div>
+                      <div class="recommendation_field">
+                        <label>Enter Recommendation Value</label>
+                        <input
+                          type="text"
+                          formControlName="recommendation_value"
+                          placeholder="cms value"
+                        />
+                      </div>
+                      <!-- <div>
+                        <input
+                          type="text"
+                          formControlName="image"
+                          placeholder="image path"
+                        />
+                      </div> -->
+
+                      <button
+                        (click)="removeZs(ix, iy, iz)"
+                        [ngStyle]="{
+                          display: !this.iz >= 1 ? 'none' : 'block'
+                        }"
+                        class="recom_remove_cta"
+                      ></button>
+                    </div>
+                  </div>
+                </div>
+                <input
+                  type="button"
+                  (click)="addZ(ix, iy)"
+                  value="Recommendation  +"
+                  class="add_rec_cta"
+                />
+              </div>
+            </div>
+          </div>
+          <input
+            type="button"
+            (click)="addY(ix)"
+            value="New Option  +"
+            class="add_opt_cta"
+          />
+        </div>
+      </div>
+    </div>
+    <input
+      type="button"
+      (click)="addX()"
+      value="New Question  +"
+      class="add_question_cta"
+    />
+  </div>
+  <p>
+    <button type="submit" class="submit_cta">Submit</button>
+  </p>
+</form>

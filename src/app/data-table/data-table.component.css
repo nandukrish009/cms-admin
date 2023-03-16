@@ -1,0 +1,453 @@
+.container {
+  width: 1200px;
+  margin: auto;
+  height: calc(100vh - 100px);
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.modal-title {
+  margin: 0px;
+}
+.modal-header {
+  padding: 12px 24px;
+}
+
+/* tr:nth-child(odd) {
+  background: #ffff;
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  font-family: "Poppins SemiBold";
+  font-size: 1em;
+  background-color: #b2142d;
+  color: white;
+}
+td {
+  font-family: "Poppins";
+  font-size: 0.9em;
+}
+table.dataTable tbody td {
+  padding: 15px 10px;
+}
+.card-body {
+  position: relative;
+  top: 32px;
+  background: #f6f7f7;
+} */
+.edit_btn {
+  cursor: pointer;
+}
+.add_btn {
+  width: 100%;
+  height: 40px;
+  margin-top: 54px;
+  background-color: #fff;
+  border: 1px solid #b2142d;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  cursor: pointer;
+  border-radius: 16px;
+}
+/* .add_btn:hover {
+  border: 1px solid #ffff;
+  background-color: #f1edee;
+  color: #fff;
+} */
+/* table.dataTable td.dt-control {
+  text-align: center;
+  cursor: pointer;
+}
+table.dataTable td.dt-control:before {
+  height: 1em;
+  width: 1em;
+  margin-top: -9px;
+  display: inline-block;
+  color: white;
+  border: 0.15em solid white;
+  border-radius: 1em;
+  box-shadow: 0 0 0.2em #444;
+  box-sizing: content-box;
+  text-align: center;
+  text-indent: 0 !important;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1em;
+  content: "+";
+  background-color: #31b131;
+}
+table.dataTable tr.dt-hasChild td.dt-control:before {
+  content: "-";
+  background-color: #d33333;
+} */
+tr.mat-header-row {
+  height: 56px;
+  background: #fff;
+  color: black;
+  border-bottom: 2px solid #fff0f0;
+}
+tr.mat-row,
+tr.mat-footer-row {
+  height: 58px;
+}
+table {
+  width: 100%;
+}
+th {
+  font-family: "Poppins";
+  font-size: 0.9em;
+  color: #000000;
+}
+td {
+  font-family: "Poppins";
+  font-size: 0.9em;
+}
+.mat-form-field {
+  float: right;
+}
+td.mat-cell {
+  border-bottom-style: none;
+}
+
+tr.student-detail-row {
+  height: 0;
+}
+tr.mat-row:not(.student-detail-row):nth-child(even) {
+  background: #b2142d;
+}
+tr.student-element-row:not(.student-expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.student-element-row:not(.student-expanded-row):active {
+  background: #efefef;
+}
+
+.student-element-row td {
+  border-bottom-width: 0;
+}
+
+.student-element-detail {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: inset 2px 3px 8px #c1c1c1;
+  border-radius: 8px;
+}
+
+.student-element-diagram {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+}
+
+.student-element-symbol {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.student-element-description {
+  padding: 16px;
+}
+
+.student-element-description-attribution {
+  opacity: 0.5;
+}
+.expandForm {
+  height: 0px;
+}
+th.mat-header-cell:last-of-type,
+td.mat-cell:last-of-type {
+  text-align: center;
+}
+.mat-button {
+  min-width: 32px;
+  padding: 0 4px;
+}
+svg {
+  fill: #afafaf;
+}
+svg:hover {
+  fill: #b2142d;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #b2142d;
+}
+input.mat-input-element {
+  color: #b2142d;
+}
+.update_btn {
+  background: #b2142d;
+  border: 2px solid #b2142d;
+  color: #ffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+.update_btn:hover {
+  border: 2px solid #b2142d;
+  background: #ffffff;
+  color: #b2142d;
+}
+tr:first-child th:first-child {
+  border-top-left-radius: 8px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.modal-dialog {
+  max-width: 1000px;
+}
+.flex_form {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.form_question {
+  width: 50%;
+  padding: 22px 14px 0px 14px;
+}
+.form_question label {
+  font-family: "Poppins SemiBold";
+  font-size: 0.9em;
+  display: block;
+  padding-bottom: 15px;
+  padding-left: 4px;
+}
+.form_question input[type="text"],
+.reco_form input[type="text"] {
+  width: 100%;
+  padding: 2px 12px;
+  height: 40px;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  border-radius: 7px;
+  border: 1px solid #e1e1e1;
+  background: #f5f5f5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  box-sizing: border-box;
+}
+.form_question input[type="text"]:focus,
+.reco_form input[type="text"]:focus {
+  border: 1px solid #b2142d;
+}
+.radio_question label {
+  font-family: "Poppins";
+  font-size: 0.9em;
+  display: inline-block;
+  margin-right: 62px;
+}
+.radio_question p {
+  font-family: "Poppins SemiBold";
+  font-size: 0.9em;
+}
+.radio_question input {
+  width: inherit;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+.reco_form {
+  width: 33%;
+  padding: 22px 14px 0px 14px;
+}
+.reco_form label {
+  margin-right: 12px;
+  font-family: "Poppins SemiBold";
+  font-size: 0.9em;
+}
+.reco_form input[type="text"] {
+  width: 70%;
+}
+.reco_form select {
+  width: 70%;
+  padding: 2px 12px;
+  height: 40px;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  border-radius: 7px;
+  border: 1px solid #e1e1e1;
+  background: #f5f5f5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  box-sizing: border-box;
+}
+.update_footer {
+  padding: 12px;
+  margin-top: 22px;
+  float: right;
+}
+.cls_btn {
+  width: 139px;
+  height: 43px;
+  border: 1px solid #b2142d;
+  border-radius: 5px;
+  background: #ffff;
+  color: #b2142d;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  margin-right: 14px;
+}
+.sub_btn {
+  width: 139px;
+  height: 43px;
+  border: 1px solid #ffff;
+  border-radius: 5px;
+  background: #b2142d;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 0.9em;
+}
+
+/* accordion */
+.accordion input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.accordion-wrapper {
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  margin: 4px auto;
+  border: 1px solid #cfcfcf;
+}
+.accordion {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.accordion:last-child {
+  margin-bottom: 0;
+}
+.accordion-label {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 16px;
+  background: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  font-family: "Poppins";
+  font-size: 0.9em;
+}
+.accordion-label:hover {
+  background: #ffffff;
+}
+.accordion-label::after {
+  content: "\276F";
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.accordion-content {
+  max-height: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.accordion-content p {
+  margin: 0;
+}
+.accordion input:checked + .accordion-label {
+  background: #b2142d;
+  color: #ffff;
+}
+.accordion input:checked + .accordion-label::after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.accordion input:checked ~ .accordion-content {
+  max-height: calc(100% - 100vh);
+  padding: 16px;
+}
+
+/* add question accordion */
+.tabs {
+  border-radius: 0px 0px 8px 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #b2142d;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-size: 0.9em;
+}
+.tab-label:hover {
+  background: #b2142d;
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  max-height: 0;
+  /* padding: 0 1em; */
+  background: white;
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #b2142d;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #b2142d;
+}
+.tab input:checked + .tab-label {
+  background: #b2142d;
+}
+.tab input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+.tab input:checked ~ .tab-content {
+  max-height: calc(100% - 100vh);
+  padding: 1em;
+}
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}

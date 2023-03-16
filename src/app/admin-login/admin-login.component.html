@@ -1,0 +1,37 @@
+<app-header></app-header>
+<!--<div class="container">
+  <form action="">
+    <label for="email">Username</label>
+    <input type="text" id="email" name="email" />
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" />
+     <button class="login_btn" routerLink="/data-table">Login</button> 
+    <button class="login_btn" type="button" (click)="signIn()">Sign in</button>
+  </form>
+</div> -->
+<div class="banner">
+  <!-- <img
+    src="../../assets/home_banner.jpg"
+    alt="banner image"
+    class="banner_image"
+  /> -->
+
+  <!-- <button class="login_btn arrow" type="button" (click)="signIn()">
+    Login in
+  </button> -->
+  <div class="top_cms">
+    <div *ngFor="let cms of cmsSortValue | slice : 0 : 4; let i = index">
+      <div class="top_badge" [ngClass]="'badgeBG' + i">
+        <div class="top_rank">#{{ i + 1 }}</div>
+        <div class="cms_name">{{ cms.CMS }}</div>
+        <div class="cms_value">{{ cms.recommendation_value }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="chart_container">
+    <canvas class="pie" id="canvas">{{ chart }}</canvas>
+  </div>
+  <button class="login_btn arrow" type="button" (click)="signIn()">
+    Login in
+  </button>
+</div>

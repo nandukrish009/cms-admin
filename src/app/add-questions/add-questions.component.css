@@ -1,0 +1,213 @@
+.Xs {
+  position: relative;
+}
+.question_container,
+.option_container {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+.recommendation_container {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+}
+input[type="text"] {
+  width: 100%;
+  margin: 20px 20px 0px 20px;
+  padding: 12px;
+  border: 1px solid #aab3b3;
+  border-radius: 5px;
+}
+.question_remove_cta {
+  position: relative;
+  top: -148px;
+  left: 108%;
+  background-image: url(../../assets/remove_icon.png);
+  background-color: #ffff;
+  /* background-color: #f6f7f7; */
+  /* padding: 3px 5px; */
+  font-family: "Poppins";
+  font-size: 0.9em;
+  cursor: pointer;
+  border: none;
+  /*border-radius: 20px;
+  color: #999191; */
+  width: 24px;
+  height: 24px;
+  /* box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 19%); */
+}
+.option_remove_cta {
+  position: relative;
+  top: -104px;
+  left: 108%;
+  background-image: url(../../assets/remove_icon.png);
+  background-color: #ffff;
+
+  /* background-color: #f6f7f7; */
+  /* padding: 3px 5px; */
+  font-family: "Poppins";
+  font-size: 0.9em;
+  cursor: pointer;
+  border: none;
+  /* border-radius: 20px; */
+  /* color: #999191; */
+  width: 24px;
+  height: 24px;
+  /* box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 19%); */
+}
+.recom_remove_cta {
+  position: relative;
+  /* background-color: #f6f7f7; */
+  background-image: url(../../assets/remove_icon.png);
+  background-color: #ffff;
+
+  /* padding: 3px 7px; */
+  font-family: "Poppins";
+  font-size: 0.9em;
+  cursor: pointer;
+  border: none;
+  /*border-radius: 50%;
+  color: #999191; */
+  width: 24px;
+  height: 24px;
+  top: 58px;
+  /* box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 19%); */
+}
+/* .question_remove_cta:hover,
+.option_remove_cta:hover,
+.recom_remove_cta:hover {
+  background-color: #ffffff;
+  color: #b2142d;
+  box-shadow: none;
+} */
+.radio_inline {
+  position: relative;
+  margin: 20px 20px 0px 20px;
+}
+.radio_input {
+  margin-right: 12px;
+}
+label span {
+  margin-right: 10px;
+  vertical-align: text-bottom;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  color: black;
+}
+form {
+  background-color: #ffffff;
+}
+input.add_rec_cta {
+  position: relative;
+  margin: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #b2142d;
+  border: 2px solid #ddb1c7;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  cursor: pointer;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+}
+input.add_opt_cta {
+  padding: 10px;
+  background-color: #ffffff;
+  color: #b2142d;
+  border: 2px solid #ddb1c7;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  cursor: pointer;
+  margin: 0px 0px 0px 20px;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+}
+input.add_question_cta {
+  position: relative;
+  margin: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #b2142d;
+  border: 2px solid #ddb1c7;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  cursor: pointer;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+}
+input.add_rec_cta:hover,
+input.add_opt_cta:hover,
+input.add_question_cta:hover {
+  border-color: #b2142d;
+  background-color: #b2142d;
+  color: #ffffff;
+}
+button.submit_cta {
+  position: relative;
+  margin: 20px;
+  padding: 10px;
+  background-color: #b2142d;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  cursor: pointer;
+  width: 154px;
+}
+button.submit_cta:hover {
+  background-color: #ffffff;
+  border: 2px solid #b2142d;
+  color: #b2142d;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.stepper_details {
+  margin: 20px 20px 0px 20px;
+}
+.stepper_details label {
+  display: block;
+  padding-bottom: 8px;
+  font-family: "Poppins";
+  font-size: 1.1em;
+}
+.stepper_details select {
+  font-family: "Poppins";
+  font-size: 0.9em;
+  padding: 11px;
+  width: 200px;
+  border-radius: 5px;
+}
+select:invalid {
+  color: gray;
+}
+.recommendation_field {
+  margin: 20px 20px 0px 20px;
+}
+.recommendation_field label {
+  padding-bottom: 8px;
+  font-family: "Poppins";
+  font-size: 1.1em;
+}
+.recommendation_field input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #aab3b3;
+  border-radius: 5px;
+  margin: 0px;
+}
+/* .question_remove_cta,
+.option_remove_cta,
+.recom_remove_cta {
+  display: none;
+} */

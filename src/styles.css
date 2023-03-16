@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url(./assets/images/poppins-semibold/Poppins-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: local("Poppins"),
+    url(./assets/images/poppins-semibold/Poppins-SemiBold.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: local("Poppins"),
+    url(./assets/images/poppins-semibold/Poppins-Bold.ttf) format("truetype");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: auto;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Poppins";
+  overflow: hidden;
+}
+/* .mat-input-element {
+  caret-color: #ffff;
+} */
+/* .dataTables_length,
+.dataTables_filter {
+  padding: 12px;
+}
+.dataTables_wrapper label {
+  font-family: "Poppins";
+  font-size: 0.9em;
+}
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+  font-family: "Poppins";
+  font-size: 0.9em;
+  padding: 12px;
+}
+
+.dataTables_info {
+  display: none;
+}
+.dataTables_wrapper .dataTables_length select,
+.dataTables_wrapper .dataTables_filter input {
+  border-radius: 0px !important;
+}
+.dataTables_filter label {
+  color: transparent;
+}
+.dataTables_wrapper .dataTables_filter input {
+  border: none !important;
+  background-image: url("../src/assets/images/search.svg");
+  transition: width 0.4s ease-in-out;
+  width: 15px;
+  background-position: 2px 0px;
+  background-repeat: no-repeat;
+  padding: 5px 0px 5px 32px !important;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-size: 0.9em;
+}
+input[type="search"] {
+  border: none !important;
+}
+input[type="search"]:focus {
+  width: 200px;
+  border: 1px solid #cfcfcf !important;
+} */
+.ngx-datatable {
+  height: 70vh;
+}

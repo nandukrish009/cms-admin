@@ -1,0 +1,57 @@
+.flow-page-header {
+  width: 100%;
+  background-color: #f6f7f7;
+}
+.header-inner-container {
+  margin: auto;
+  display: flex;
+}
+.svg-logo img {
+  width: 72px;
+  height: 54px;
+  margin: 18px 0px;
+  padding-right: 18px;
+  border-right: 1px solid #707070;
+  position: relative;
+  left: 2%;
+  padding-left: 15px;
+}
+.header-title {
+  margin: 0px 0px 0px 18px;
+  font-family: "Poppins";
+  line-height: 92px;
+  font-size: 1.5em;
+}
+a.nav-link {
+  text-decoration: none;
+  color: #b2142d;
+  border: 2px solid #b2142d;
+  padding: 8px 12px;
+  border-radius: 4px;
+  top: 4%;
+  position: absolute;
+  right: 10%;
+}
+a.nav-link:hover {
+  background-color: #b2142d;
+  color: #fff;
+}
+@media (min-width: 1250px) {
+  .header-inner-container {
+    width: 1200px;
+  }
+  .svg-logo img {
+    padding-left: 0px;
+  }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .header-inner-container {
+    width: 700px;
+  }
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+  .header-inner-container {
+    width: 900px;
+  }
+}
